@@ -45,12 +45,19 @@ Route::get('/endurance', [EnterpriseModuleController::class, 'liveRaceCenter'])-
 Route::get('/endurance/{slug}', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('endurance.show');
 
 // ── Divisions ────────────────────────────────────────────────────────────
-Route::get('/divisions/f1', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('f1.division');
-Route::get('/divisions/indycar', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('indycar');
-Route::get('/divisions/wrc', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('wrc');
+Route::view('/divisions/f1', 'racing.formulae')->name('f1.division');
+Route::view('/divisions/indycar', 'racing.indycar')->name('indycar');
+Route::view('/divisions/wrc', 'racing.wrc')->name('wrc');
 
 // ── Drivers ──────────────────────────────────────────────────────────────
-Route::get('/drivers', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('drivers');
+Route::get('/drivers', function () {
+    $team = \App\Models\Team::first();
+    $drivers = \App\Models\Driver::where('team_id', $team?->id ?? 0)
+        ->where('active', true)
+        ->orderBy('career_points', 'desc')
+        ->get();
+    return view('rgr.drivers', compact('drivers'));
+})->name('drivers');
 
 // ── Standings ────────────────────────────────────────────────────────────
 Route::get('/standings', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('standings');
@@ -108,11 +115,11 @@ Route::get('/about/media', [EnterpriseModuleController::class, 'liveRaceCenter']
 Route::get('/about/magazine', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('about.magazine');
 
 // ── More Racing Divisions ─────────────────────────────────────────────────
-Route::get('/divisions/fe', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('fe');
-Route::get('/divisions/ewc', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('ewc');
-Route::get('/divisions/nascar', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('nascar');
-Route::get('/divisions/gt/europe', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('gt.europe');
-Route::get('/divisions/gt/asia', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('gt.asia');
+Route::view('/divisions/fe', 'racing.formulae')->name('fe');
+Route::view('/divisions/ewc', 'racing.ewc')->name('ewc');
+Route::view('/divisions/nascar', 'racing.nascar')->name('nascar');
+Route::view('/divisions/gt/europe', 'racing.gtwce')->name('gt.europe');
+Route::view('/divisions/gt/asia', 'racing.gtwca')->name('gt.asia');
 
 // ── Race Schedule ─────────────────────────────────────────────────────────
 Route::get('/schedule', [EnterpriseModuleController::class, 'raceResults'])->name('race.schedule');
