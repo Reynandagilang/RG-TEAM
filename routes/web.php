@@ -107,7 +107,7 @@ Route::get('/dashboard', [EnterpriseModuleController::class, 'membership'])->nam
 Route::get('/about/corporate', [EnterpriseModuleController::class, 'teamMuseum'])->name('about.corporate');
 Route::get('/about/history', [EnterpriseModuleController::class, 'teamMuseum'])->name('about.history');
 Route::get('/about/achievements', [EnterpriseModuleController::class, 'teamMuseum'])->name('about.achievements');
-Route::get('/about/academy', [EnterpriseModuleController::class, 'teamMuseum'])->name('about.academy');
+Route::view('/about/academy', 'about.academy')->name('about.academy');
 Route::get('/about/sustainability', [EnterpriseModuleController::class, 'teamMuseum'])->name('about.sustainability');
 Route::get('/about/partnership', [EnterpriseModuleController::class, 'sponsorPortal'])->name('about.partnership');
 Route::get('/about/news', [EnterpriseModuleController::class, 'liveRaceCenter'])->name('about.news');

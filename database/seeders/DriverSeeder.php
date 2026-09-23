@@ -30,7 +30,7 @@ class DriverSeeder extends Seeder
             'career_points' => 2587,
             'world_championships' => 3,
             'bio' => 'Max Verstappen dikenal dengan gaya balapnya yang sangat agresif, klinis, dan tanpa kompromi. Ia bergabung dengan RGR untuk mempertahankan dominasi gelar.',
-            'role' => 'Pembalap Utama',
+            'role' => 'Race Driver',
             'category' => 'F1',
             'active' => true,
         ]);
@@ -45,7 +45,7 @@ class DriverSeeder extends Seeder
             'career_points' => 480,
             'world_championships' => 0,
             'bio' => 'George Russell adalah talenta F1 asal Inggris dengan presisi balap kualifikasi luar biasa dan konsistensi tinggi di setiap tikungan sirkuit.',
-            'role' => 'Pembalap Utama',
+            'role' => 'Race Driver',
             'category' => 'F1',
             'active' => true,
         ]);
@@ -61,7 +61,7 @@ class DriverSeeder extends Seeder
             'career_points' => 110,
             'world_championships' => 4,
             'bio' => 'Sébastien Bourdais adalah legenda balap asal Prancis dengan segudang pengalaman di ajang Formula 1, IndyCar, dan balap ketahanan prototipe kelas dunia.',
-            'role' => 'Pembalap Utama WEC',
+            'role' => 'Race Driver',
             'category' => 'Endurance',
             'active' => true,
         ]);
@@ -76,7 +76,7 @@ class DriverSeeder extends Seeder
             'career_points' => 72,
             'world_championships' => 0,
             'bio' => 'Sean Gelael memimpin skuad ketahanan RGR di kelas LMP2/Hypercar dengan daya tahan stints yang sangat stabil di balapan basah.',
-            'role' => 'Pembalap Utama WEC',
+            'role' => 'Race Driver',
             'category' => 'Endurance',
             'active' => true,
         ]);
@@ -92,7 +92,7 @@ class DriverSeeder extends Seeder
             'career_points' => 1250,
             'world_championships' => 1,
             'bio' => 'Juara NASCAR Cup Series 2021 dan ahli balap lintasan tanah (dirt track). Larson terkenal dengan manuver agresif di sisi luar tembok sirkuit oval.',
-            'role' => 'Pembalap Utama NASCAR',
+            'role' => 'Race Driver',
             'category' => 'NASCAR',
             'active' => true,
         ]);
@@ -107,7 +107,7 @@ class DriverSeeder extends Seeder
             'career_points' => 980,
             'world_championships' => 1,
             'bio' => 'Juara NASCAR Cup Series 2020 dan pemenang balapan road course terbanyak. Elliott adalah ikon dan favorit para penggemar balap Amerika.',
-            'role' => 'Pembalap Utama NASCAR',
+            'role' => 'Race Driver',
             'category' => 'NASCAR',
             'active' => true,
         ]);
@@ -123,7 +123,7 @@ class DriverSeeder extends Seeder
             'career_points' => 210,
             'world_championships' => 3,
             'bio' => 'Spesialis trek basah yang andal dan pemegang rekor kemenangan beruntun di Spa 24 Jam.',
-            'role' => 'Pembalap Utama GTWCE',
+            'role' => 'Race Driver',
             'category' => 'GTWCE',
             'active' => true,
         ]);
@@ -138,7 +138,7 @@ class DriverSeeder extends Seeder
             'career_points' => 310,
             'world_championships' => 2,
             'bio' => 'Pakar kualifikasi GT3 dunia, Marciello memiliki insting lap tunggal yang sangat tajam dan andal memimpin jalannya balapan.',
-            'role' => 'Pembalap Utama GTWCE',
+            'role' => 'Race Driver',
             'category' => 'GTWCE',
             'active' => true,
         ]);
@@ -153,7 +153,7 @@ class DriverSeeder extends Seeder
             'career_points' => 240,
             'world_championships' => 1,
             'bio' => 'Pembalap veteran Nürburgring Nordschleife dengan konsistensi lap tinggi dan manajemen ban yang presisi.',
-            'role' => 'Pembalap Utama GTWCE',
+            'role' => 'Race Driver',
             'category' => 'GTWCE',
             'active' => true,
         ]);
@@ -168,7 +168,7 @@ class DriverSeeder extends Seeder
             'career_points' => 160,
             'world_championships' => 0,
             'bio' => 'Ahli taktis di lintasan sempit, dikenal tangguh mempertahankan posisi dari tekanan pembalap lawan.',
-            'role' => 'Pembalap Utama GTWCE',
+            'role' => 'Race Driver',
             'category' => 'GTWCE',
             'active' => true,
         ]);
@@ -183,7 +183,7 @@ class DriverSeeder extends Seeder
             'career_points' => 88,
             'world_championships' => 9,
             'bio' => 'Legenda MotoGP 9 kali juara dunia yang beralih ke balap roda empat GT3. Rossi menunjukkan progres performa luar biasa bersama skuad RGR.',
-            'role' => 'Pembalap Utama GTWCE',
+            'role' => 'Race Driver',
             'category' => 'GTWCE',
             'active' => true,
         ]);
@@ -198,7 +198,7 @@ class DriverSeeder extends Seeder
             'career_points' => 195,
             'world_championships' => 1,
             'bio' => 'Rekan setim Valentino Rossi di kelas Bronze Cup. Martin membawa insting taktis yang kaya dari berbagai ajang ketahanan klasik Eropa.',
-            'role' => 'Pembalap Utama GTWCE',
+            'role' => 'Race Driver',
             'category' => 'GTWCE',
             'active' => true,
         ]);
@@ -214,7 +214,7 @@ class DriverSeeder extends Seeder
             'career_points' => 120,
             'world_championships' => 0,
             'bio' => 'Mantan pembalap Formula 1 kebanggaan Indonesia, Rio Haryanto menjadi andalan utama RGR dalam merebut kemenangan di kejuaraan sirkuit Asia.',
-            'role' => 'Pembalap Utama GTWCA',
+            'role' => 'Race Driver',
             'category' => 'GTWCA',
             'active' => true,
         ]);
@@ -229,7 +229,7 @@ class DriverSeeder extends Seeder
             'career_points' => 280,
             'world_championships' => 1,
             'bio' => 'Pembalap pabrikan Porsche yang memiliki rekor kemenangan mentereng di berbagai sirkuit Asia Pasifik.',
-            'role' => 'Pembalap Utama GTWCA',
+            'role' => 'Race Driver',
             'category' => 'GTWCA',
             'active' => true,
         ]);
@@ -244,7 +244,7 @@ class DriverSeeder extends Seeder
             'career_points' => 170,
             'world_championships' => 2,
             'bio' => 'Pembalap elit Porsche Asia Pasifik, ahli sirkuit Shanghai dan Suzuka dengan ritme lap balapan yang konsisten.',
-            'role' => 'Pembalap Utama GTWCA',
+            'role' => 'Race Driver',
             'category' => 'GTWCA',
             'active' => true,
         ]);
@@ -259,7 +259,7 @@ class DriverSeeder extends Seeder
             'career_points' => 110,
             'world_championships' => 0,
             'bio' => 'Pembalap berpengalaman tinggi di kancah GT Asia Tenggara, mahir dalam menjaga stabilitas grip ban di cuaca tropis basah.',
-            'role' => 'Pembalap Utama GTWCA',
+            'role' => 'Race Driver',
             'category' => 'GTWCA',
             'active' => true,
         ]);
@@ -275,7 +275,7 @@ class DriverSeeder extends Seeder
             'career_points' => 113,
             'world_championships' => 0,
             'bio' => 'Talenta muda Formula 2 RGR Academy, pemenang GP Macau F4 termuda. Siap dipersiapkan untuk promosi ke grid utama F1.',
-            'role' => 'Pembalap Akademi',
+            'role' => 'Reserve Driver',
             'category' => 'Academy',
             'active' => true,
         ]);
@@ -290,7 +290,7 @@ class DriverSeeder extends Seeder
             'career_points' => 85,
             'world_championships' => 0,
             'bio' => 'Juara Dunia Gokart OK FIA 2021. Nakamura-Berta memiliki keahlian berkendara presisi tinggi di lintasan sasis tunggal Formula 3.',
-            'role' => 'Pembalap Akademi',
+            'role' => 'Reserve Driver',
             'category' => 'Academy',
             'active' => true,
         ]);
